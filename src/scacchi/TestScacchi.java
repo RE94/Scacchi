@@ -131,9 +131,9 @@ public class TestScacchi {
 		controller.turno = false;
 		squares[7][6].setPezzo(new Pezzo("Alfiere", new ImageIcon("img/NAlfiere.gif"), false));
 
-		squares[4][6].setPezzo(new Pezzo("Cavallo", new ImageIcon("img/BCavallo.gif"), true));
+		squares[6][5].setPezzo(new Pezzo("Cavallo", new ImageIcon("img/BCavallo.gif"), true));
 		controller.onClick(squares[7][6]);
 		controller.onClick(squares[5][4]);
-		Assert.assertEquals(null, squares[7][6].getPezzo());
+		Assert.assertEquals(null, squares[5][4].getPezzo());
 	}
 }
